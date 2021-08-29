@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <title>Blitz</title>
+</head>
+<body>
+    <header class="header">
+        <div class="_container">
+            <div class="header__top">
+                <img src="./images/header/Logo.svg" alt="" class="header__top-img">
+                <p class="header__top-text text__16px">Продажа недвижимости в Москва-Сити</p>
+                <div class="header__top-requestCall">
+                    <a href="tel:+74951991999" class="requestCall__phone text__33px">+7 (495) 199-19-99</a>
+                    <!-- <button class="requestCall__button text__16px">Заказать звонок</button> -->
+                    <a href="#" class="butt text__16px requestCall__button"><div class="before"></div>Заказать звонок<div class="after"></div></a>
+                </div>
+            </div>
+            <div class="header__infoContent">
+                <h1 class="header__main-title title__heavy">Агентство с международным именем Blitz Estate</h1>
+                <p class="header__text text__22px">Поможем продать, купить и арендовать недвижимость в Москве, районе Сити и области</p>
+                <ul class="infoContent__stats-list">
+                    <li class="infoContent__stats-item">
+                        <span class="large__numbers">17</span>
+                        <p class="list__item-text text__16px">Работаем в 17 странах</p>
+                    </li>
+                    <li class="infoContent__stats-item">
+                        <span class="large__numbers">1963</span>
+                        <p class="list__item-text text__16px">Помогли 1963-м клиентам</p>
+                    </li>
+                    <li class="infoContent__stats-item">
+                        <span class="large__numbers">10</span>
+                        <p class="list__item-text text__16px">Лет на рынке недвижимости</p>
+                    </li>
+                </ul>
+                <div class="infoContent__test">
+                    <img src="./images/header/icon.svg" alt="" class="infoContent__test-icon">
+                    <p class="infoContent__test-text text__16px">Пройди тест и получи в подарок бутылку шампанского <b>Veuve Clicquot</b></p>
+                </div>
+                <button class="infoContent__button text__16px">Подобрать недвижимость</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="test">
+        <div class="_container">
+            <h2 class="section__title test__title">Пройдити тест из 5 вопросов</h2>
+            <p class="text__22px section__info">Мы подберём 20 покупателей готовых купить вашу недвижимость в течение 24 часов</p>
+            <div class="test__container">
+                <div class="test__container-left">
+                    <h3 class="section__sub-title">Выберите местоположение объекта</h3>
+                    <div class="test__container-wrapper">
+                        <div class="wrapper__item wrapper__moscow">
+                            <img src="./images/section-test/Moscow.jpg" alt="" class="wrapper__moscow-img">
+                            <p class="wrapper__moscow-text text__16px">В России</p>
+                        </div>
+                        <div class="wrapper__item wrapper__worldMap">
+                            <img src="./images/section-test/world-map.jpg" alt="" class="wrapper__world-img">
+                            <p class="wrapper__world-text text__16px">За границой</p>
+                        </div>
+                    </div>
+                    <div class="test__content-bottom">
+                        <p class="test__stats text__16px">Вы ответили на: <span>0</span>/5 вопросов</p>
+                        <div class="test__continue">
+                            <p class="continue text__16px">Продолжить</p>
+                            <img src="./images/section-test/Arrow.svg" alt="" class="continue__arrow">
+                        </div>
+                    </div>
+                </div>
+                <div class="test__container-right">
+                    <div class="right__checkMark">
+                        <img class="checkMark__img" src="./images/section-test/Check-mark.svg" alt="">
+                        <p class="checkMark__text text__16px">Поможем Вам приобрести, продать или арендовать необходимую недвижимость</p>
+                    </div>
+                    <div class="right__checkMark">
+                        <img class="checkMark__img" src="./images/section-test/Check-mark.svg" alt="">
+                        <p class="checkMark__text text__16px">Продадим вашу недвижимость за 21 день или выкупим сами по стоимостьи в договоре</p>
+                    </div>
+                    <div class="right__checkMark">
+                        <img class="checkMark__img" src="./images/section-test/Check-mark.svg" alt="">
+                        <p class="checkMark__text text__16px">Забронируем понравившуюся квартиру и зафиксируем стоимость для вас на момент бронирования</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="servicesInternational">
+        <div class="_container">
+            <h2 class="section__title test__title">Наши услуги на международном рынке</h2>
+            <div class="services__wrapper">
+                <div class="services__top">
+                    <div class="image first">
+                        <img src="./images/section-servicesinternational/image_1.jpg" alt="" class="services__top-img services__top-img-1">
+                        <div class="image__content">
+                            <h3 class="section__sub-title">Жилая недвижимость</h3>
+                            <div class="image__content-hover">
+                                <p class="image__content-text text__16px">Сопровождение сделок по продаже, купли и аренде объектов недвижимости под ключ.</p>
+                                <button class="button image__content-button text__16px">Узнать больше</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="top__right">
+                        <div class="right__top">
+                            <div class="image">
+                                <div class="image__bg"></div>
+                                <img src="./images/section-servicesinternational/image_2.jpg" alt="" class="services__top-img services__top-img-2">
+                                <div class="image__content">
+                                    <h3 class="section__sub-title">Доходная недвижимость</h3>
+                                    <div class="image__content-hover">
+                                        <p class="image__content-text text__16px">Сопровождение сделок по продаже, купли и аренде объектов недвижимости под ключ.</p>
+                                        <button class="button image__content-button text__16px">Узнать больше</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="image">
+                                <img src="./images/section-servicesinternational/image_3.jpg" alt="" class="services__top-img services__top-img-3">
+                                <div class="image__content">
+                                    <h3 class="section__sub-title">Инвестиционные операции</h3>
+                                    <div class="image__content-hover">
+                                        <p class="image__content-text text__16px">Сопровождение сделок по продаже, купли и аренде объектов недвижимости под ключ.</p>
+                                        <button class="button image__content-button text__16px">Узнать больше</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="image image__bottom">
+                            <img src="./images/section-servicesinternational/image_4.jpg" alt="" class="services__top-img services__top-img-4">
+                            <div class="image__content">
+                                <h3 class="section__sub-title">Покупка яхт</h3>
+                                <div class="image__content-hover">
+                                    <p class="image__content-text text__16px">Сопровождение сделок по продаже, купли и аренде объектов недвижимости под ключ.</p>
+                                    <button class="button image__content-button text__16px">Узнать больше</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="services__bottom">
+                    <div class="image">
+                        <img src="./images/section-servicesinternational/image_5.jpg" alt="" class="services__top-img services__top-img-5">
+                        <div class="image__content">
+                            <h3 class="section__sub-title">Доверительное управление</h3>
+                            <div class="image__content-hover">
+                                <p class="image__content-text text__16px">Сопровождение сделок по продаже, купли и аренде объектов недвижимости под ключ.</p>
+                                <button class="button image__content-button text__16px">Узнать больше</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image">
+                        <img src="./images/section-servicesinternational/image_6.jpg" alt="" class="services__top-img services__top-img-6">
+                        <div class="image__content">
+                            <h3 class="section__sub-title">Консьерж сервис</h3>
+                            <div class="image__content-hover">
+                                <p class="image__content-text text__16px">Сопровождение сделок по продаже, купли и аренде объектов недвижимости под ключ.</p>
+                                <button class="button image__content-button text__16px">Узнать больше</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="services__wrapper-adaptation">
+                <div class="services__top">
+                    <div class="image first">
+                        <img src="./images/section-servicesinternational/image_1.jpg" alt="" class="services__top-img services__top-img-1">
+                        <div class="image__content">
+                            <h3 class="section__sub-title long">Жилая недвижимость</h3>
+                            <h3 class="section__sub-title section__sub-title-adaptation">Жилая недвиж.</h3>
+                            <div class="image__content-hover">
+                                <p class="image__content-text text__16px">Сопровождение сделок по продаже, купли и аренде объектов недвижимости под ключ.</p>
+                                <button class="button image__content-button text__16px">Больше</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="top__right">
+                        <div class="image image__bottom">
+                            <img src="./images/section-servicesinternational/image_4.jpg" alt="" class="services__top-img services__top-img-4">
+                            <div class="image__content">
+                                <h3 class="section__sub-title">Покупка яхт</h3>
+                                <div class="image__content-hover">
+                                    <p class="image__content-text text__16px">Сопровождение сделок по продаже, купли и аренде объектов недвижимости под ключ.</p>
+                                    <button class="button image__content-button text__16px">Больше</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img src="./images/section-servicesinternational/image_5.jpg" alt="" class="services__top-img services__top-img-5">
+                            <div class="image__content">
+                                <h3 class="section__sub-title up">Доверительное управление</h3>
+                                <div class="image__content-hover">
+                                    <p class="image__content-text text__16px">Сопровождение сделок по продаже, купли и аренде объектов недвижимости под ключ.</p>
+                                    <button class="button image__content-button text__16px">Больше</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="services__bottom">
+                    <div class="image">
+                        <div class="image__bg"></div>
+                        <img src="./images/section-servicesinternational/image_2.jpg" alt="" class="services__top-img services__top-img-2">
+                        <div class="image__content">
+                            <h3 class="section__sub-title long">Доходная недвижимость</h3>
+                            <h3 class="section__sub-title section__sub-title-adaptation">Доходная недвиж.</h3>
+                            <div class="image__content-hover">
+                                <p class="image__content-text text__16px">Сопровождение сделок по продаже, купли и аренде объектов недвижимости под ключ.</p>
+                                <button class="button image__content-button text__16px">Больше</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image">
+                        <img src="./images/section-servicesinternational/image_3.jpg" alt="" class="services__top-img services__top-img-3">
+                        <div class="image__content">
+                            <h3 class="section__sub-title long">Инвестиционные операции</h3>
+                            <h3 class="section__sub-title section__sub-title-adaptation">Инвест. операции</h3>
+                            <div class="image__content-hover">
+                                <p class="image__content-text text__16px">Сопровождение сделок по продаже, купли и аренде объектов недвижимости под ключ.</p>
+                                <button class="button image__content-button text__16px">Больше</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image">
+                        <img src="./images/section-servicesinternational/image_6.jpg" alt="" class="services__top-img services__top-img-6">
+                        <div class="image__content">
+                            <h3 class="section__sub-title">Консьерж сервис</h3>
+                            <div class="image__content-hover">
+                                <p class="image__content-text text__16px">Сопровождение сделок по продаже, купли и аренде объектов недвижимости под ключ.</p>
+                                <button class="button image__content-button text__16px">Больше</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="chooseApartmens">
+        <div class="_container">
+            <h2 class="section__title test__title">Выберите апартаменты в Москва-Сити</h2>
+            <p class="text__22px section__info">Мы включили в наш каталог все апартаменты доступные для покупки в Москва-Сити</p>
+            <div class="choose__box">
+                <div class="choose__tabs-items">
+                    <a href="#tab-1" class="choose__tabs-item active text__16px">Показать все</a>
+                    <a href="#tab-2" class="choose__tabs-item text__16px">От 20-30 млн</a>
+                    <a href="#tab-3" class="choose__tabs-item text__16px">От 30-50 млн</a>
+                    <a href="#tab-4" class="choose__tabs-item text__16px">От 50-100 млн</a>
+                    <a href="#tab-5" class="choose__tabs-item text__16px">Более 100 млн</a>
+                </div>
+                <div class="choose__tabs-items choose__tabs-items-adaptation">
+                    <a href="#tab-1" class="choose__tabs-item active text__16px">все</a>
+                    <a href="#tab-2" class="choose__tabs-item text__16px">20-30 млн</a>
+                    <a href="#tab-3" class="choose__tabs-item text__16px">30-50 млн</a>
+                    <a href="#tab-4" class="choose__tabs-item text__16px">50-100 млн</a>
+                    <a href="#tab-5" class="choose__tabs-item text__16px">>100 млн</a>
+                </div>
+                <div class="choose__tabs-items choose__tabs-items-extraSmall">
+                    <a href="#tab-1" class="choose__tabs-item active text__16px">все</a>
+                    <a href="#tab-2" class="choose__tabs-item text__16px">20-30</a>
+                    <a href="#tab-3" class="choose__tabs-item text__16px">30-50</a>
+                    <a href="#tab-4" class="choose__tabs-item text__16px">50-100</a>
+                    <a href="#tab-5" class="choose__tabs-item text__16px">>100</a>
+                </div>
+                <div class="choose__tabs-contentbox">
+                    <div class="choose__tabs-content active text__16px" id='tab-1'>
+                        <div class="choose__tabs-content-wrapper">
+                            <div class="tabs__content-wrapper">
+                                <div class="content__tab-item">
+                                    <img src="./images/section-chooseAppartments/apps_1.jpg" alt="" class="tab__item-img">
+                                    <div class="tab__item-text">
+                                        <h2 class="section__sub-title item__title">Апартаменты в «башне око»</h2>
+                                        <p class="text__16px item__lot">Лот № 4536</p>
+                                        <div class="item__text-footer">
+                                            <div class="footer__price">
+                                                <p class="text__33px">25 600 000 ₽</p>
+                                                <p class="text__16px price-for-area">365 714 ₽ за м²</p>
+                                            </div>
+                                            <div class="footer__info">
+                                                <p class="text__16px">Площадь 70 м²</p>
+                                                <p class="text__16px">Этаж 52</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="tab__item-button button text__16px">Назначить просмотр</button>
+                                </div>
+                                <div class="content__tab-item">
+                                    <img src="./images/section-chooseAppartments/apps_2.jpg" alt="" class="tab__item-img">
+                                    <div class="tab__item-text">
+                                        <h2 class="section__sub-title item__title">Апартаменты в «башне Империя»</h2>
+                                        <p class="text__16px item__lot">Лот № 4547</p>
+                                        <div class="item__text-footer">
+                                            <div class="footer__price">
+                                                <p class="text__33px">27 900 000 ₽</p>
+                                                <p class="text__16px price-for-area">420 000 ₽ за м²</p>
+                                            </div>
+                                            <div class="footer__info">
+                                                <p class="text__16px">Площадь 62 м²</p>
+                                                <p class="text__16px">Этаж 35</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="tab__item-button button text__16px">Назначить просмотр</button>
+                                </div>
+                            </div>
+                            <div class="tabs__content-wrapper">
+                                <div class="content__tab-item">
+                                    <img src="./images/section-chooseAppartments/apps_3.jpg" alt="" class="tab__item-img">
+                                    <div class="tab__item-text">
+                                        <h2 class="section__sub-title item__title">Апартаменты в «Neva Towers»</h2>
+                                        <p class="text__16px item__lot">Лот № 4548</p>
+                                        <div class="item__text-footer">
+                                            <div class="footer__price">
+                                                <p class="text__33px">19 000 000 ₽</p>
+                                                <p class="text__16px price-for-area">475 000 ₽ за м²</p>
+                                            </div>
+                                            <div class="footer__info">
+                                                <p class="text__16px">Площадь 40 м²</p>
+                                                <p class="text__16px">Этаж 16</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="tab__item-button button text__16px">Назначить просмотр</button>
+                                </div>
+                                <div class="content__tab-item">
+                                    <img src="./images/section-chooseAppartments/apps_4.jpg" alt="" class="tab__item-img">
+                                    <div class="tab__item-text">
+                                        <h2 class="section__sub-title item__title">Апартаменты в комплексе «Федерация»</h2>
+                                        <p class="text__16px item__lot">Лот № 4549</p>
+                                        <div class="item__text-footer">
+                                            <div class="footer__price">
+                                                <p class="text__33px">59 500 000 ₽</p>
+                                                <p class="text__16px price-for-area">540 909 ₽ за м²</p>
+                                            </div>
+                                            <div class="footer__info">
+                                                <p class="text__16px">Площадь 110 м²</p>
+                                                <p class="text__16px">Этаж 84</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="tab__item-button button text__16px">Назначить просмотр</button>
+                                </div>
+                            </div>
+                            <div class="tabs__content-wrapper">
+                                <div class="content__tab-item">
+                                    <img src="./images/section-chooseAppartments/apps_5.jpg" alt="" class="tab__item-img">
+                                    <div class="tab__item-text">
+                                        <h2 class="section__sub-title item__title">Апартаменты в «башне ОКО»</h2>
+                                        <p class="text__16px item__lot">Лот № 4550</p>
+                                        <div class="item__text-footer">
+                                            <div class="footer__price">
+                                                <p class="text__33px">34 900 000 ₽</p>
+                                                <p class="text__16px price-for-area">396 590 ₽ за м²</p>
+                                            </div>
+                                            <div class="footer__info">
+                                                <p class="text__16px">Площадь 88 м²</p>
+                                                <p class="text__16px">Этаж 29</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="tab__item-button button text__16px">Назначить просмотр</button>
+                                </div>
+                                <div class="content__tab-item">
+                                    <img src="./images/section-chooseAppartments/apps_6.jpg" alt="" class="tab__item-img">
+                                    <div class="tab__item-text">
+                                        <h2 class="section__sub-title item__title">Апартаменты в  «Город столиц»</h2>
+                                        <p class="text__16px item__lot">Лот № 4551</p>
+                                        <div class="item__text-footer">
+                                            <div class="footer__price">
+                                                <p class="text__33px">28 400 000 ₽</p>
+                                                <p class="text__16px price-for-area">498 245 ₽ за м²</p>
+                                            </div>
+                                            <div class="footer__info">
+                                                <p class="text__16px">Площадь 57 м²</p>
+                                                <p class="text__16px">Этаж 48</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="tab__item-button button text__16px">Назначить просмотр</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="after__items">
+                            <button class="choose__tab-content-button button text__16px">
+                                <span class="text__16px">Показать еще</span>
+                                <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.8956 1.44781L6.44774 7.89562L5.7578 7.20567L12.2056 0.757867L12.8956 1.44781Z" fill="black"/>
+                                    <path d="M0.689874 0.75786L7.13769 7.20567L6.44774 7.89562L-7.16437e-05 1.4478L0.689874 0.75786Z" fill="black"/>
+                                </svg>
+                                <span class="spinner-border spinner-border-bg" role="status" aria-hidden="true" id="loader"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                    <div class="choose__tabs-content text__16px" id='tab-2'>тестовый текст для второй вкладки</div>
+                    <div class="choose__tabs-content text__16px" id='tab-3'>тестовый текст для третьей вкладки</div>
+                    <div class="choose__tabs-content text__16px" id='tab-4'>тестовый текст для четвертой вкладки</div>
+                    <div class="choose__tabs-content text__16px" id='tab-5'>тестовый текст для пятой вкладки</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="infoAboutcompany">
+        <div class="_container">
+            <div class="infoAboutcompany__wrapper">
+                <div class="section__text-info">
+                    <h2 class="text__info-header">
+                        Blitz Estate - на рынке недвижимости с 2008 года
+                    </h2>
+                    <p class="text__info-text text__16px">
+                        Blitz Estate – международная компания по управлению недвижимостью и финансами. Основана в 2008 г. в Австрии. На сегодня представлена в Англии, Испании, Латвии, ОАЭ, Австрии и России, кроме того имеет партнерскую сеть более чем в десяти странах мира.
+                    </p>
+                    <p class="text__info-text text__16px">
+                        Мы предоставляем услуги полного цикла по приобретению и продаже недвижимости и управлению активами, предоставляя клиентам неизменно высокое качество сервиса. Наш подход позволяет оптимизировать инвестиционный портфель, диверсифицировать риски и обеспечить полную конфиденциальность сделки.
+                    </p>
+                    <button class="text__info-button text__16px">Узнать больше</button>
+                    <button class="text__info-button text__info-button-adaptation text__16px">Больше</button>
+                </div>
+                <div class="section__photo-info">
+                    <img src="./images/section-infoAboutcompany/1.jpg" alt="" class="photo__info-mainPhoto">
+                    <div class="photo__info-footer">
+                        <img src="./images/section-infoAboutcompany/2.jpg" alt="" class="photo__info-img">
+                        <img src="./images/section-infoAboutcompany/3.jpg" alt="" class="photo__info-img">
+                        <img src="./images/section-infoAboutcompany/4.jpg" alt="" class="photo__info-img">
+                        <img src="./images/section-infoAboutcompany/5.jpg" alt="" class="photo__info-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="directions">
+        <div class="_container">
+            <div class="section__title" style="margin-bottom: 0;">Направления нашего агентства</div>
+            <div class="directions__items-wrapper">
+                <div class="items__column">
+                    <div class="item__container">
+                        <img src="./images/section-directions/Frame.svg" alt="" class="item__frame svg">
+                        <div class="item__content">
+                            <h3 class="item__header section__sub-title">Аренда жилой недвижимости</h3>
+                            <div class="item__content-wrapper">
+                                <div class="item__content-text">
+                                    <p class="text__supervisor text__12px">Руководитель:</p>
+                                    <p class="text__supervisor-info text__16px">Александр Смирнов</p>
+                                    <a class="text__supervisor-phone text__33px" href="tel: +74951991999">+7(495)199-19-99</a>
+                                    <a href="mailto: moscow@blitz.estate" class="text__supervisor-email text__16px">moscow@blitz.estate<hr></a>
+                                </div>
+                                <img src="./images/section-directions/1.svg" alt="" class="item__img">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item__container">
+                        <img src="./images/section-directions/Frame.svg" alt="" class="item__frame svg">
+                        <div class="item__content">
+                            <h3 class="item__header section__sub-title">Отдел блиц-сделок</h3>
+                            <div class="item__content-wrapper">
+                                <div class="item__content-text">
+                                    <p class="text__supervisor text__12px">Руководитель:</p>
+                                    <p class="text__supervisor-info text__16px">Александр Смирнов</p>
+                                    <a class="text__supervisor-phone text__33px" href="tel: +74951991999">+7(495)199-19-99</a>
+                                    <a href="mailto: moscow@blitz.estate" class="text__supervisor-email text__16px">moscow@blitz.estate<hr></a>
+                                </div>
+                                <img src="./images/section-directions/3.svg" alt="" class="item__img">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item__container">
+                        <img src="./images/section-directions/Frame.svg" alt="" class="item__frame svg">
+                        <div class="item__content">
+                            <h3 class="item__header section__sub-title">Продажа жилой недвижимости на вторичном рынке</h3>
+                            <div class="item__content-wrapper">
+                                <div class="item__content-text">
+                                    <p class="text__supervisor text__12px">Руководитель:</p>
+                                    <p class="text__supervisor-info text__16px">Александр Смирнов</p>
+                                    <a class="text__supervisor-phone text__33px" href="tel: +74951991999">+7(495)199-19-99</a>
+                                    <a href="mailto: moscow@blitz.estate" class="text__supervisor-email text__16px">moscow@blitz.estate<hr></a>
+                                </div>
+                                <img src="./images/section-directions/5.svg" alt="" class="item__img">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item__container">
+                        <img src="./images/section-directions/Frame.svg" alt="" class="item__frame svg">
+                        <div class="item__content">
+                            <h3 class="item__header section__sub-title">Инвестиционные проекты</h3>
+                            <div class="item__content-wrapper">
+                                <div class="item__content-text">
+                                    <p class="text__supervisor text__12px">Руководитель:</p>
+                                    <p class="text__supervisor-info text__16px">Александр Смирнов</p>
+                                    <a class="text__supervisor-phone text__33px" href="tel: +74951991999">+7(495)199-19-99</a>
+                                    <a href="mailto: moscow@blitz.estate" class="text__supervisor-email text__16px">moscow@blitz.estate <hr></a>
+                                </div>
+                                <img src="./images/section-directions/7.jpg" alt="" class="item__img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="items__column">
+                    <div class="item__container">
+                        <img src="./images/section-directions/Frame.svg" alt="" class="item__frame svg">
+                        <div class="item__content">
+                            <h3 class="item__header section__sub-title">Аренда коммерческой недвижимости</h3>
+                            <div class="item__content-wrapper">
+                                <div class="item__content-text">
+                                    <p class="text__supervisor text__12px">Руководитель:</p>
+                                    <p class="text__supervisor-info text__16px">Александр Смирнов</p>
+                                    <a class="text__supervisor-phone text__33px" href="tel: +74951991999">+7(495)199-19-99</a>
+                                    <a href="mailto: moscow@blitz.estate" class="text__supervisor-email text__16px">moscow@blitz.estate<hr></a>
+                                </div>
+                                <img src="./images/section-directions/2.svg" alt="" class="item__img">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item__container">
+                        <img src="./images/section-directions/Frame.svg" alt="" class="item__frame svg">
+                        <div class="item__content">
+                            <h3 class="item__header section__sub-title">Продажа новостроек</h3>
+                            <div class="item__content-wrapper">
+                                <div class="item__content-text">
+                                    <p class="text__supervisor text__12px">Руководитель:</p>
+                                    <p class="text__supervisor-info text__16px">Александр Смирнов</p>
+                                    <a class="text__supervisor-phone text__33px" href="tel: +74951991999">+7(495)199-19-99</a>
+                                    <a href="mailto: moscow@blitz.estate" class="text__supervisor-email text__16px">moscow@blitz.estate<hr></a>
+                                </div>
+                                <img src="./images/section-directions/4.svg" alt="" class="item__img">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item__container">
+                        <img src="./images/section-directions/Frame.svg" alt="" class="item__frame svg">
+                        <div class="item__content">
+                            <h3 class="item__header section__sub-title">Продажа коммерческой недвижимости</h3>
+                            <div class="item__content-wrapper">
+                                <div class="item__content-text">
+                                    <p class="text__supervisor text__12px">Руководитель:</p>
+                                    <p class="text__supervisor-info text__16px">Александр Смирнов</p>
+                                    <a class="text__supervisor-phone text__33px" href="tel: +74951991999">+7(495)199-19-99</a>
+                                    <a href="mailto: moscow@blitz.estate" class="text__supervisor-email text__16px">moscow@blitz.estate<hr></a>
+                                </div>
+                                <img src="./images/section-directions/6.svg" alt="" class="item__img">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item__container">
+                        <img src="./images/section-directions/Frame.svg" alt="" class="item__frame svg">
+                        <div class="item__content">
+                            <h3 class="item__header section__sub-title">Недвижимость за рубежом</h3>
+                            <div class="item__content-wrapper">
+                                <div class="item__content-text">
+                                    <p class="text__supervisor text__12px">Руководитель:</p>
+                                    <p class="text__supervisor-info text__16px">Александр Смирнов</p>
+                                    <a class="text__supervisor-phone text__33px" href="tel: +74951991999">+7(495)199-19-99</a>
+                                    <a href="mailto: moscow@blitz.estate" class="text__supervisor-email text__16px">moscow@blitz.estate <hr></a>
+                                </div>
+                                <img src="./images/section-directions/8.svg" alt="" class="item__img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section__links" style="display: none;">
+                <div class="links__column">
+                    <a href="#" class="column__link text__22px">Blitz Estate – международная <hr></a>
+                    <a href="#" class="column__link text__22px">недвижимостью и финансами <hr></a>
+                    <a href="#" class="column__link text__22px">компания по управлению <hr></a>
+                </div>
+                <div class="links__column">
+                    <a href="#" class="column__link text__22px">Blitz Estate – международная <hr></a>
+                    <a href="#" class="column__link text__22px">недвижимостью и финансами <hr></a>
+                    <a href="#" class="column__link text__22px">компания по управлению <hr></a>
+                </div>
+                <div class="links__column">
+                    <a href="#" class="column__link text__22px">Blitz Estate – международная <hr></a>
+                    <a href="#" class="column__link text__22px">недвижимостью и финансами <hr></a>
+                    <a href="#" class="column__link text__22px">компания по управлению <hr></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section__supervisor">
+        <div class="_container">
+            <div class="section__supervisor-wrapper">
+                <div class="supervisior__content">
+                    <h2 class="supervisior__content-title section__title">Руководитель агентства Blitz Estate</h2>
+                    <h3 class="supervisior__content-name section__sub-title">Георгий Мебония</h3>
+                    <p class="supervisior__content-text text__16px">Вице-президент по проектам в ММДЦ «Москва-Сити», Генеральный директор компании Blitz Estate в России.</p>
+                    <p class="supervisior__content-text text__16px">Имея европейский опыт работы и показывая верность своему делу являемся стратегическим партнером ММДЦ «Москва-Сити с 2013 года на эксклюзивной реализации объектов приватных к продаже.</p>
+                    <p class="supervisior__content-text text__16px">Благодаря кропотливому и теплому отношению нам удается быстро и эффективно оказывать нашим клиентам услуги высочайшего уровня в сфере недвижимости.</p>
+                    <button class="supervisior__content-button text__16px">Задать вопрос</button>
+                </div>
+                <img src="./images/section-supervisor/Depositphotos_1351815_original.svg" alt="" class="supervisior__portret">
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="_container">
+            <div class="footer__wrapper">
+                <div class="footer__text-info">
+                    <p class="text__info-paragraph text__16px">Время работы: <br> Пн-Пт: 8:00-23:00, Сб-Вс: 9:00-21:00</p>
+                    <p class="text__info-paragraph text__16px">Пресненская набережная, дом 12 Башня <br> "Федерация"  Восток, 31 этаж, Офис Р</p>
+                    <p class="text__info-paragraph text__16px">ОГРН: 1187746683464</p>
+                    <p class="text__info-paragraph text__16px">ИНН: 7703462548</p>
+                </div>
+                <div class="footer__logo">
+                    <img src="./images/header/Logo.svg" alt="" class="footer__logo-img">
+                    <p class="footer__logo-info text__16px">Продажа недвижимости в Москва-Сити</p>
+                </div>
+                <div class="footer__requestCall">
+                    <a href="tel: +74951991999" class="footer__requestCall-phone text__33px">+7 (495) 199-19-99</a>
+                    <a href="mailto: moscow@blitz.estate" class="footer__requestCall-email text__22px">moscow@blitz.estate <hr></a>
+                    <button class="footer__requestCall-button text__16px">Заказать звонок</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+</body>
+</html>
